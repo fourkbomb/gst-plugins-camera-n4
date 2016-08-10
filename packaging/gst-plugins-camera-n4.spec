@@ -16,12 +16,7 @@ BuildRequires:  pkgconfig(libtbm)
 BuildRequires:  pkgconfig(libdrm)
 BuildRequires:  pkgconfig(libdrm_exynos)
 BuildRequires:  gstreamer-devel
-BuildConflicts:  linux-glibc-devel
-%ifarch %{arm}
-BuildRequires:  arm-trats2-linux-kernel-headers >= 3.10
-%else
-BuildRequires:  arm64-juno-linux-kernel-headers >= 3.15
-%endif
+BuildRequires:  linux-glibc-devel
 
 %description
 GStreamer codec plugins package for N4
